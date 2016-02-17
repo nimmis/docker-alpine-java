@@ -26,14 +26,18 @@ This will start the container with the init process running, access the containe
 
 The different version is determined with the TAG 
 
-The available version are 
+### TAGs
 
-* latest 		 - OpenJDK Java version 8 JRE
-* openjdk-7-jdk          - OpenJDK Java version 7 JDK
-* openjdk-7-jre          - OpenJDK Java version 7 JRE
-* openjdk-8-jdk          - OpenJDK Java version 8 JDK
-* openjdk-8-jre          - OpenJDK Java version 8 JRE
+This image contains the following versions of java, the container names are
+nimmis/alpine-java:<tag> where tag is
 
+| Tag    | Alpine version | size |
+| ------ | -------------- | ---- |
+| latest |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) | 
+| openjdk-7-jdk |  OpenJDK Java version 7 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jdk) |
+| openjdk-7-jre |  OpenJDK Java version 7 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jre) |
+| openjdk-8-jdk |  OpenJDK Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jdk) |
+| openjdk-8-jre |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jre) |
 Example to run a container with OpenJDK version 7 JDK
 
 	docker run -d nimmis/alpine-java:openjdk-7-jdk
