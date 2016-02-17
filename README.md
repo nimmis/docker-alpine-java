@@ -1,6 +1,6 @@
 ## Alpine microcontainer with Java
 
-This is docker images of Alpine 3.3 with different versions of java
+This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) based on Alpine 3.3 with different versions of OpenJDK java
 
 ### Examples
 
@@ -31,7 +31,7 @@ The different version is determined with the TAG
 This image contains the following versions of java, the container names are
 nimmis/alpine-java:<tag> where tag is
 
-| Tag    | Alpine version | size |
+| Tag    | OpenJDK version | size |
 | ------ | -------------- | ---- |
 | latest |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) | 
 | openjdk-7-jdk |  OpenJDK Java version 7 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jdk) |
