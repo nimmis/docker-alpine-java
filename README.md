@@ -39,6 +39,7 @@ nimmis/alpine-java:<tag> where tag is
 | openjdk-8-jdk |  OpenJDK Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jdk) |
 | oracle-8-jdk |  Oracle Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:oracle-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:oracle-8-jdk) |
 | openjdk-8-jre |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jre) |
+| oracle-8-jre |  Oracle Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:oracle-8-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:oracle-8-jre) |
 Example to run a container with OpenJDK version 7 JDK
 
 	docker run -d nimmis/alpine-java:openjdk-7-jdk
