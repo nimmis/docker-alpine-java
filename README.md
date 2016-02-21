@@ -33,7 +33,7 @@ nimmis/alpine-java:<tag> where tag is
 
 | Tag    | OpenJDK version | size |
 | ------ | -------------- | ---- |
-| latest |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) | 
+| latest |  Oracle Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) | 
 | openjdk-7-jdk |  OpenJDK Java version 7 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jdk) |
 | openjdk-7-jre |  OpenJDK Java version 7 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jre) |
 | openjdk-8-jdk |  OpenJDK Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jdk) |
