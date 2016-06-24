@@ -19,9 +19,9 @@ RUN apk update && apk upgrade && \
     rm -f glibc-2.23-r1.apk glibc-bin-2.23-r1.apk && \
     mkdir -p /usr/lib/jvm/ && \
     curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jre-8u91-linux-x64.tar.gz | \
+       http://download.oracle.com/otn-pub/java/jdk/8u92-b14/jre-8u92-linux-x64.tar.gz | \
        tar xz -C /usr/lib/jvm/ && \
-    ln -s jre1.8.0_91  /usr/lib/jvm/default-jvm && \
+    ln -s jre1.8.0_92  /usr/lib/jvm/default-jvm && \
     apk del curl && \
     mkdir /tmp/tmprt && \
     cd /tmp/tmprt && \
