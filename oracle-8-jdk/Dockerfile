@@ -11,18 +11,17 @@ ENV JAVA_VERSION_MAJOR=8 \
 
 RUN apk update && apk upgrade && \
     apk add curl && \
-    curl -L -o glibc-2.21-r2.apk \ 
-      "https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-2.21-r2.apk" && \
-    curl -L -o glibc-bin-2.21-r2.apk \
-      "https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-bin-2.21-r2.apk" && \
-    apk add --allow-untrusted glibc-2.21-r2.apk glibc-bin-2.21-r2.apk && \
-    rm -f glibc-2.21-r2.apk glibc-bin-2.21-r2.apk && \
-    /usr/glibc/usr/bin/ldconfig /lib /usr/glibc/usr/lib && \
+    curl -L -o glibc-2.23-r1.apk \
+      "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r1/glibc-2.23-r1.apk" && \
+    curl -L -o glibc-bin-2.23-r1.apk \
+      "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r1/glibc-bin-2.23-r1.apk" && \
+    apk add --allow-untrusted glibc-2.23-r1.apk glibc-bin-2.23-r1.apk && \    
+    rm -f glibc-2.23-r1.apk glibc-bin-2.23-r1.apk && \
     mkdir -p /usr/lib/jvm/ && \
     curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
-       http://download.oracle.com/otn-pub/java/jdk/8u74-b02/jdk-8u74-linux-x64.tar.gz | \
+       http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz | \
        tar xz -C /usr/lib/jvm/ && \
-    ln -s jdk1.8.0_74  /usr/lib/jvm/default-jvm && \
+    ln -s jdk1.8.0_91  /usr/lib/jvm/default-jvm && \
     apk del curl && \
     mkdir /tmp/tmprt && \
     cd /tmp/tmprt && \
