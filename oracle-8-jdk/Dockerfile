@@ -1,22 +1,16 @@
-FROM nimmis/alpine-micro
+FROM nimmis/alpine-glibc
 
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=102 \
-    JAVA_VERSION_BUILD=14 \
+    JAVA_VERSION_MINOR=112 \
+    JAVA_VERSION_BUILD=15 \
     JAVA_HOME=/usr/lib/jvm/default-jvm \
     PATH=${PATH}:/usr/lib/jvm/default-jvm/bin/
   
 
 RUN apk update && apk upgrade && \
     apk add curl && \
-    curl -L -o glibc-2.23-r1.apk \
-      "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r1/glibc-2.23-r1.apk" && \
-    curl -L -o glibc-bin-2.23-r1.apk \
-      "https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.23-r1/glibc-bin-2.23-r1.apk" && \
-    apk add --allow-untrusted glibc-2.23-r1.apk glibc-bin-2.23-r1.apk && \    
-    rm -f glibc-2.23-r1.apk glibc-bin-2.23-r1.apk && \
     mkdir -p /usr/lib/jvm/ && \
     curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
       "http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/jdk-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz" | \
