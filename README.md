@@ -1,6 +1,6 @@
 ## Alpine microcontainer with Java
 
-This is a micro docker container [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) based on Alpine 3.3 with different versions of OpenJDK and Oracle java
+This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/alpine-java.svg)](https://microbadger.com/images/nimmis/alpine-java "Get your own image badge on microbadger.com") based on Alpine 3.3 [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/) (for oracle java Alpine with glibc [nimmis/alpine-glibc](https://registry.hub.docker.com/u/nimmis/alpine-glibc/) is used) with different versions of OpenJDK and Oracle java
 
 ### Examples
 
@@ -33,13 +33,13 @@ nimmis/alpine-java:<tag> where tag is
 
 | Tag    | OpenJDK version | size |
 | ------ | -------------- | ---- |
-| latest |  Oracle Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:latest.svg)](https://imagelayers.io/?images=nimmis/alpine-java:latest) | 
-| openjdk-7-jdk |  OpenJDK Java version 7 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jdk) |
-| openjdk-7-jre |  OpenJDK Java version 7 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-7-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-7-jre) |
-| openjdk-8-jdk |  OpenJDK Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jdk) |
-| oracle-8-jdk |  Oracle Java version 8 JDK  | [![](https://badge.imagelayers.io/nimmis/alpine-java:oracle-8-jdk.svg)](https://imagelayers.io/?images=nimmis/alpine-java:oracle-8-jdk) |
-| openjdk-8-jre |  OpenJDK Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:openjdk-8-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:openjdk-8-jre) |
-| oracle-8-jre |  Oracle Java version 8 JRE  | [![](https://badge.imagelayers.io/nimmis/alpine-java:oracle-8-jre.svg)](https://imagelayers.io/?images=nimmis/alpine-java:oracle-8-jre) |
+| latest |  Oracle Java version 8 JRE  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java.svg)](https://microbadger.com/images/nimmis/alpine-java "Get your own image badge on microbadger.com") | 
+| openjdk-7-jdk |  OpenJDK Java version 7 JDK  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:openjdk-7-jdk.svg)](https://microbadger.com/images/nimmis/alpine-java:openjdk-7-jdk "Get your own image badge on microbadger.com") |
+| openjdk-7-jre |  OpenJDK Java version 7 JRE  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:openjdk-7-jre.svg)](https://microbadger.com/images/nimmis/alpine-java:openjdk-7-jre "Get your own image badge on microbadger.com") |
+| openjdk-8-jdk |  OpenJDK Java version 8 JDK  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:openjdk-8-jdk.svg)](https://microbadger.com/images/nimmis/alpine-java:openjdk-8-jdk "Get your own image badge on microbadger.com") |
+| openjdk-8-jre |  OpenJDK Java version 8 JRE  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:openjdk-8-jre.svg)](https://microbadger.com/images/nimmis/alpine-java:openjdk-8-jre "Get your own image badge on microbadger.com") |
+| oracle-8-jdk |  Oracle Java version 8 JDK  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:oracle-8-jdk.svg)](https://microbadger.com/images/nimmis/alpine-java:oracle-8-jdk "Get your own image badge on microbadger.com") |
+| oracle-8-jre |  Oracle Java version 8 JRE  | [![](https://images.microbadger.com/badges/image/nimmis/alpine-java:oracle-8-jre.svg)](https://microbadger.com/images/nimmis/alpine-java:oracle-8-jre "Get your own image badge on microbadger.com") |
 Example to run a container with OpenJDK version 7 JDK
 
 	docker run -d nimmis/alpine-java:openjdk-7-jdk
