@@ -1,6 +1,6 @@
 ## Alpine microcontainer with Java
 
-This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/alpine-java.svg)](https://microbadger.com/images/nimmis/alpine-java "Get your own image badge on microbadger.com") based on Alpine 3.3 [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/) (for oracle java Alpine with glibc [nimmis/alpine-glibc](https://registry.hub.docker.com/u/nimmis/alpine-glibc/) is used) with different versions of OpenJDK and Oracle java
+This is a micro docker container [![](https://images.microbadger.com/badges/image/nimmis/alpine-java.svg)](https://microbadger.com/images/nimmis/alpine-java "Get your own image badge on microbadger.com") based on Alpine 3.5 [nimmis/alpine-mico](https://registry.hub.docker.com/u/nimmis/alpine-micro/) (for oracle java Alpine with glibc [nimmis/alpine-glibc](https://registry.hub.docker.com/u/nimmis/alpine-glibc/) is used) with different versions of OpenJDK and Oracle java
 
 ### Examples
 
