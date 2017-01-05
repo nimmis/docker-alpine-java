@@ -26,7 +26,22 @@ This will start the container with the init process running, access the containe
 
 The different version is determined with the TAG 
 
-### TAGs
+## Issues
+
+If you have any problems with or questions about this image, please contact us by submitting a ticket through a [GitHub issue](https://github.com/nimmis/docker-alpine-java/issues "GitHub issue")
+
+1. Look to see if someone already filled the bug, if not add a new one.
+2. Add a good title and description with the following information.
+ - if possible an copy of the output from **cat /etc/BUILDS/*** from inside the container
+ - any logs relevant for the problem
+ - how the container was started (flags, environment variables, mounted volumes etc)
+ - any other information that can be helpful
+
+## Contributing
+
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
+
+## TAGs
 
 This image contains the following versions of java, the container names are
 nimmis/alpine-java:<tag> where tag is
