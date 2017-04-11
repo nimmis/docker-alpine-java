@@ -3,17 +3,17 @@ FROM nimmis/alpine-glibc
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=112 \
-    JAVA_VERSION_BUILD=15 \
+    JAVA_VERSION_MINOR=121 \
+    JAVA_VERSION_BUILD=13 \
+    JAVA_URL_HASH=e9e7ea248e2c4826b92b3f075a80e441 \
     JAVA_HOME=/usr/lib/jvm/default-jvm \
     PATH=${PATH}:/usr/lib/jvm/default-jvm/bin/
-  
 
 RUN apk update && apk upgrade && \
     apk add curl && \
     mkdir -p /usr/lib/jvm/ && \
     curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie" \
-      "http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/jre-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz" | \
+      "http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-b${JAVA_VERSION_BUILD}/${JAVA_URL_HASH}/jre-${JAVA_VERSION_MAJOR}u${JAVA_VERSION_MINOR}-linux-x64.tar.gz" | \
        tar xz -C /usr/lib/jvm/ && \
     ln -s jre1.${JAVA_VERSION_MAJOR}.0_${JAVA_VERSION_MINOR}  /usr/lib/jvm/default-jvm && \
     apk del curl && \

@@ -10,13 +10,13 @@ runit daemon, for more information about that see [nimmis/alpine-mico](https://r
 
 #### starting the container with a normal shell
 
-	docker run -ti nimmis/alpine-java:openjdk-7-jdk /bin/bash
+	docker run -ti nimmis/alpine-java:openjdk-8-jdk /bin/bash
 
 This will start the container with a normal shell, no cron or other systems are started
 
 #### starting the container as a daemon
 
-	docker run -d nimmis/alpine-java:openjdk-7-jdk
+	docker run -d nimmis/alpine-java:openjdk-8-jdk
 
 This will start the container with the init process running, access the container with
 
