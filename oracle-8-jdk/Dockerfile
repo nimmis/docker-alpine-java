@@ -3,9 +3,9 @@ FROM nimmis/alpine-glibc
 MAINTAINER nimmis <kjell.havneskold@gmail.com>
 
 ENV JAVA_VERSION_MAJOR=8 \
-    JAVA_VERSION_MINOR=121 \
-    JAVA_VERSION_BUILD=13 \
-    JAVA_URL_HASH=e9e7ea248e2c4826b92b3f075a80e441 \
+    JAVA_VERSION_MINOR=131 \
+    JAVA_VERSION_BUILD=11 \
+    JAVA_URL_HASH=d54c1d3a095b4ff2b6607d096fa80163 \
     JAVA_HOME=/usr/lib/jvm/default-jvm \
     PATH=${PATH}:/usr/lib/jvm/default-jvm/bin/
   
